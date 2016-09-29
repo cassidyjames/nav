@@ -1,6 +1,5 @@
 nav {
   display: block;
-  position: sticky;
   top: 0;
   width: 100%;
 
@@ -47,6 +46,10 @@ nav a.active {
 }
 
 @media (min-width: 768px) {
+  nav {
+    position: sticky;
+  }
+
   nav a {
     padding: 1.25em;
   }
