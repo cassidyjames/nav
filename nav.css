@@ -47,18 +47,11 @@ nav a.active {
 }
 
 @media (min-width: 768px) {
-
   nav a {
     padding: 1.25em;
   }
 
   nav a.active {
     padding-bottom: 1em;
-  }
-}
-
-@media (max-width: 767px) {
-  nav {
-    position: static;
   }
 }
