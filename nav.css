@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a.active {
-  border-bottom: 0.25em solid red;
+  border-bottom: 0.25em solid darkturquoise;
   padding-bottom: 0.5em;
 }
 
@@ -53,7 +53,8 @@ nav nav {
 
 nav a.active + nav {
   display: block;
-  background: red;
+  background: darkturquoise;
+  margin-bottom: 4em;
   position: absolute;
   top: 100%;
 
