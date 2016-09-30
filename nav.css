@@ -1,13 +1,12 @@
 nav {
   display: block;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
 
   background: purple;
 
   color: white;
-  // font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -55,8 +54,8 @@ nav nav {
 nav a.active + nav {
   display: block;
   background: red;
-  position: fixed;
-  top: 4em;
+  position: absolute;
+  top: 100%;
 
   text-transform: lowercase;
 }
@@ -66,8 +65,8 @@ nav nav a.active {
   padding-bottom: 0.5em;
 }
 
-body {
-  padding-top: 7em;
+nav + section.content {
+  margin-top: 4em;
 }
 
 @media (min-width: 768px) {
