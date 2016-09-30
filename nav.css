@@ -46,6 +46,17 @@ nav a.active {
   padding-bottom: 0.5em;
 }
 
+nav nav {
+  display: none;
+}
+
+nav a.active + nav {
+  display: block;
+  background: red;
+  position: sticky;
+  top: 100%;
+}
+
 @media (min-width: 768px) {
   nav a {
     padding: 1.25em;
