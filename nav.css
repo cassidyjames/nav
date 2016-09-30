@@ -1,12 +1,14 @@
 nav {
   display: block;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 
   background: purple;
 
   color: white;
+  // font-weight: 300;
+  text-transform: uppercase;
 }
 
 nav::after {
@@ -37,8 +39,8 @@ nav a {
   padding: 0.75em;
 
   color: inherit;
+  font-weight: inherit;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 nav a.active {
@@ -53,8 +55,19 @@ nav nav {
 nav a.active + nav {
   display: block;
   background: red;
-  position: sticky;
-  top: 100%;
+  position: fixed;
+  top: 4em;
+
+  text-transform: lowercase;
+}
+
+nav nav a.active {
+  border-bottom-color: purple;
+  padding-bottom: 0.5em;
+}
+
+body {
+  padding-top: 7em;
 }
 
 @media (min-width: 768px) {
@@ -64,5 +77,9 @@ nav a.active + nav {
 
   nav a.active {
     padding-bottom: 1em;
+  }
+
+  nav nav a {
+    padding: 0.75em;
   }
 }

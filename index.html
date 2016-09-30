@@ -19,9 +19,9 @@
           <a href="#" class="active">Section 1</a>
           <nav>
             <ul>
-              <li><a href="#">Foo</a></li>
-              <li><a href="#">Bar</a></li>
-              <li><a href="#">Baz</a></li>
+              <li><a class="active" href="#">Subsection 1</a></li>
+              <li><a href="#">Subsection 2</a></li>
+              <li><a href="#">Subsection 3</a></li>
             </ul>
           </nav>
         </li>
@@ -63,10 +63,10 @@
       <p>Any <code>a.active</code> links will get an accent-colored underline applied.</p>
 
       <h3>@media queries</h3>
-      <p>There is one media query in the CSS: <code>@media (min-width: 768px) { &hellip; }</code> which simply sets a bit higher padding on the links for larger displays.</p>
+      <p>There is one media query in the CSS: <code>@media (min-width: 768px) { &hellip; }</code> which simply sets a bit higher padding on the links for larger displays and sets up&hellip;</p>
 
       <h3>position: sticky</h3>
-      <p>I&rsquo;m pulling in a (completely optional) polyfill for <code>position: sticky</code>. In supported browsers, that makes the nav bar stay in the normal flow until you scroll, at which point it effectively becomes <code>position: fixed</code>.</p>
+      <p>I&rsquo;m pulling in a (completely optional) polyfill for <code>position: sticky</code>. In supported browsers, that makes the nav bar stay in the normal flow until you scroll, at which point it effectively becomes <code>position: fixed</code>. Only enabled on larger displays.</p>
 
       <h1>Filler content for scroll</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat nulla tempor lacus eleifend, at suscipit ante efficitur. Mauris vehicula scelerisque tellus et porttitor. Donec feugiat tellus dapibus, sagittis ligula eu, condimentum dolor. Phasellus mattis efficitur sodales. Phasellus et dignissim ante. Morbi faucibus varius odio, et mollis dolor sagittis nec. Morbi et vulputate augue. Fusce at magna molestie, molestie dolor in, lacinia massa.</p>
@@ -75,9 +75,5 @@
       <p>Proin ut tortor tristique, congue ipsum eu, pulvinar risus. Nulla ultrices eleifend elit, at faucibus tellus. Fusce sapien felis, facilisis id commodo ac, vulputate sed ante. Donec viverra purus ante, ac tristique nibh tincidunt a. Pellentesque at augue sed nisl consequat condimentum. Vestibulum aliquam lacus id hendrerit ornare. Proin quis tempus urna. Praesent tincidunt quis mauris nec vulputate. Donec rhoncus consequat urna, ut semper ligula faucibus et. Ut elementum neque ac risus auctor dapibus. Mauris vehicula varius aliquam. Duis vulputate molestie nibh quis convallis. Mauris eu mauris sit amet massa sollicitudin luctus sed non sapien. Vestibulum fermentum condimentum risus non placerat. Mauris sodales tempus sapien, in convallis justo feugiat et. Maecenas ut justo id arcu luctus ultricies.</p>
       <p>Aenean magna magna, rhoncus sed ultricies vitae, porta at elit. Integer eleifend fermentum erat, sed cursus augue consequat vel. Sed et molestie nisl. Proin sodales leo diam, pulvinar tincidunt quam varius ac. Etiam finibus gravida commodo. Cras aliquam fringilla laoreet. Ut lacinia enim placerat ante auctor, a dignissim ligula eleifend. Sed nulla eros, finibus ultricies tristique et, dignissim vulputate nisi.</p>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.rawgit.com/philipwalton/polyfill/master/dist/polyfill.min.js"></script>
-    <script src="https://cdn.rawgit.com/philipwalton/polyfill/master/demos/position-sticky/polyfill.position-sticky.js"></script>
   </body>
 </html>
